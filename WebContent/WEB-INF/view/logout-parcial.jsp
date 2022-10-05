@@ -1,4 +1,8 @@
-<a href="entrada?acao=Logout">Sair</a>
+
+
+
+<a href="entrada?acao=Logout" style="font-weight:bold">Sair</a>
+
 <br>
 <br>
 <br>

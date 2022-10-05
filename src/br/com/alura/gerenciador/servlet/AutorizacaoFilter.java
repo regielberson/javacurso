@@ -21,6 +21,7 @@ public class AutorizacaoFilter implements Filter {
 		
 		System.out.println("AutorizacaoFilter");
 		
+		
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpServletResponse response = (HttpServletResponse) servletResponse;
 		

@@ -17,8 +17,7 @@
   <filter>
   	<filter-name>MF</filter-name>
   	<filter-class>br.com.alura.gerenciador.servlet.MonitoramentoFilter</filter-class>
-  </filter>
-  
+  </filter>  
   <filter-mapping>
 	<filter-name>MF</filter-name>
 	<url-pattern>/entrada</url-pattern>

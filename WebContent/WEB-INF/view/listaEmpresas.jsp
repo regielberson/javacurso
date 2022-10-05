@@ -13,7 +13,13 @@
 <body>
 	<c:import url="logout-parcial.jsp" />
 
+
 	Usuario Logado: ${usuarioLogado.login }
+	
+	
+	<br>
+	
+	<a href="/gerenciador/entrada?acao=NovaEmpresaForm">Tela de Cadastro</a>
 	
 	<br>
 	<br>
@@ -23,7 +29,7 @@
 		Empresa ${ empresa } cadastrada com sucesso!
 	</c:if>
 	
-	Lista de empresas: <br />
+	<h1> Lista de empresas:</h1>
 	
 	<ul>
 		<c:forEach items="${empresas}" var="empresa">

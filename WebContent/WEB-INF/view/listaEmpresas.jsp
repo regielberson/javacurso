@@ -19,8 +19,10 @@
 	
 	<br>
 	
-	<a href="/gerenciador/entrada?acao=NovaEmpresaForm">Tela de Cadastro</a>
+	<a href="/gerenciador/entrada?acao=NovaEmpresaForm">Cadastro de Empresas</a><br>
 	
+	
+
 	<br>
 	<br>
 	<br>
@@ -41,6 +43,8 @@
 			</li>
 		</c:forEach>
 	</ul>
+	
+
 	
 </body>
 </html>

@@ -51,6 +51,11 @@ public class Banco {
 	public List<Empresa> getEmpresas() {
 		return Banco.lista;
 	}
+	
+	public List<Usuario> getUsuarios() {
+		return Banco.listaUsuarios;
+	}
+
 
 	public void removeEmpresa(Integer id) {
 

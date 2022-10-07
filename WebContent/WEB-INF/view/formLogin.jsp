@@ -11,6 +11,10 @@
 </head>
 <body>
 
+      <h1> Projeto Java Web </h1>
+    
+      <h2> Tela de Acesso </h2>
+
 	<form action="${linkEntradaServlet }" method="post">
 	
 		Usuário: <input type="text" name="login"  />
@@ -22,8 +26,8 @@
 		
 
 	</form>
-	
-    <a href="/gerenciador/entrada?acao=CadastrarForm">Cadastrar</a>
+	<br>	
+    <a href="/gerenciador/entrada?acao=CadastrarForm"> Não tenho acesso! </a>
 
 	
 	

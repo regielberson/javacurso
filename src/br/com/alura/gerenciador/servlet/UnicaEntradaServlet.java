@@ -20,14 +20,8 @@ public class UnicaEntradaServlet extends HttpServlet {
 
 		String paramAcao = request.getParameter("acao");
 		
-//		HttpSession sessao = request.getSession();
-//		boolean usuarioNaoEstaLogado = (sessao.getAttribute("usuarioLogado") == null);
-//		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));
-//		
-//		if(ehUmaAcaoProtegida && usuarioNaoEstaLogado) {
-//			response.sendRedirect("entrada?acao=LoginForm");
-//			return;
-//		}
+
+		
 		
 		String nomeDaClasse = "br.com.alura.gerenciador.acao." + paramAcao;
 		
@@ -48,29 +42,7 @@ public class UnicaEntradaServlet extends HttpServlet {
 			response.sendRedirect(tipoEEndereco[1]);
 		}
 		
-		
-		//paramAcao.executa(req,res)
-		
-//		String nome = null;
-//		if(paramAcao.equals("ListaEmpresas")) {
-//			ListaEmpresas acao = new ListaEmpresas();
-//			nome = acao.executa(request, response);
-//		} else if(paramAcao.equals("RemoveEmpresa")) {
-//			RemoveEmpresa acao = new RemoveEmpresa();
-//			nome = acao.executa(request, response);
-//		} else if(paramAcao.equals("MostraEmpresa")) {
-//			MostraEmpresa acao = new MostraEmpresa();
-//			nome = acao.executa(request, response);
-//		} else if(paramAcao.equals("AlteraEmpresa")) {
-//			AlteraEmpresa acao = new AlteraEmpresa();
-//			nome = acao.executa(request, response);
-//		} else if(paramAcao.equals("NovaEmpresa")) {
-//			NovaEmpresa acao = new NovaEmpresa();
-//			nome = acao.executa(request, response);
-//		} else if(paramAcao.equals("NovaEmpresaForm")) {
-//			NovaEmpresaForm acao = new NovaEmpresaForm();
-//			nome = acao.executa(request, response);
-//		}
+
 		
 	}
 

@@ -8,7 +8,6 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -40,7 +39,10 @@ public class AutorizacaoFilter implements Filter {
 		
 		HttpSession sessao = request.getSession();
 		boolean usuarioNaoEstaLogado = (sessao.getAttribute("usuarioLogado") == null);
-		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));
+		boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") 
+				|| paramAcao.equals("LoginForm")
+				|| paramAcao.equals("CadastrarForm") 	|| paramAcao.equals("Cadastrar")
+				);
 		
 		if(ehUmaAcaoProtegida && usuarioNaoEstaLogado) {
 			response.sendRedirect("entrada?acao=LoginForm");

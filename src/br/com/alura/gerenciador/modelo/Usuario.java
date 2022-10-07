@@ -2,8 +2,10 @@ package br.com.alura.gerenciador.modelo;
 
 public class Usuario {
 
+	private Integer id;
 	private String login;
 	private String senha;
+	private String email;
 
 	public String getLogin() {
 		return login;
@@ -15,6 +17,14 @@ public class Usuario {
 
 	public String getSenha() {
 		return senha;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public void setSenha(String senha) {
@@ -32,5 +42,15 @@ public class Usuario {
 		
 		return true;
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
 }
 

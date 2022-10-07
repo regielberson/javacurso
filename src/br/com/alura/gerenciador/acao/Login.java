@@ -19,10 +19,13 @@ public class Login implements Acao {
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
 		
-		System.out.println("Logando " + login);
+		System.out.println("usuario: " + login);
+		System.out.println("senha: " +  senha);
 		
 		Banco banco = new Banco();
 		Usuario usuario = banco.existeUsuario(login,senha);
+		
+	   System.out.println(usuario);
 		
 		if(usuario != null) {
 			System.out.println("Usuario existe");
